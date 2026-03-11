@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
@@ -23,4 +24,31 @@ h3 {
     margin-left: 40px;
     font-size: 25px;
     color:rgb(80, 138, 138)
+=======
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+pre {
+    margin-left: 50px;
+}
+ol {
+    margin-left: 25px;
+}
+ol a {
+    text-decoration: none;
+}
+ol {
+    padding: 30px;
+}
+body {
+    background-color: #2c2c2c;
+    color: rgba(255, 255, 255, 0.699);
+}
+h3 {
+    margin-left: 40px;
+    font-size: 25px;
+    color:rgb(80, 138, 138)
+>>>>>>> 1504d9499ec6daf5ea11c7876ab70da5bf63c26a
 }
