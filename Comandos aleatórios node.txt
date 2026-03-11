@@ -1,0 +1,22 @@
+PS C:\Users\Jeffe\OneDrive\Área de Trabalho\CursoJS> node
+Welcome to Node.js v24.12.0.      
+Type ".help" for more information.
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2)
+'1545.50'
+> n1.toFixed(2).replace('.',',')
+'1545,50'
+> n1.toFixed(2).replace('.',',').replace('15','1.5')
+'1.545,50'
+> n1 = n1.toFixed(2).replace('.',',').replace('15','1.5')
+'1.545,50'
+> n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})
+'1.545,50'
+> n1 = 1545
+1545
+> n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})
+'R$ 1.545,00'
+>
