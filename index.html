@@ -25,9 +25,12 @@
         <a href="#Logi">Operadores Lógicos</a>
         <a href="#Tern">Operadores Ternários</a>
         <a href="#DOM">DOM</a>
+        <a href="#EVT">Eventos DOM</a>
+        <a href="#FUNC">Funções</a>
+        <a href="#COND">Condições</a>
       </div>
     </div>
-    <hr>
+    <hr id="hrindice">
     <br>
 <h3 id="Proc">Precedência de operadores</h3>
 <pre>
@@ -157,11 +160,12 @@ fazendo uma analogia às condições
 </pre>
 <article>
 <h2 id="DOM">DOM</h2><br>
-<p>(Document Object Model)</p><br>
+<p>(Document Object Model)</p>
+<p>"Facilitador de acesso ao HTML pelo JS"</p><br>
 <img id="imgDOM" src="img/DOM.webp" alt="Árvore DOM"><br>
 <p>Créditos da imagem: Marcos Dantas, DIO</p>
 <pre>
-
+<hr>
 Seletores
 <ul>
   <li>Marca</li>
@@ -169,7 +173,7 @@ getElementsByTagName() []
 ex:
 var p1 = window.getElementsByTagName('p') [0] * Pega o primeiro parágrafo, utilizamos índice porque o código buscará por todos os elementos (Elements).
 window.document.write(p.innerText) * Texto do parágrafo
-obs1: write não funciona com o script em head utilizando o método defer (para carregamento posterior ao html), pode ser trocado por window.alert(p.innerText)
+obs1: write não funciona com o script em head utilizando o método defer (para carregamento posterior ao html), pode ser trocado por window.alert(p.innerText), obviamente, não com o mesmo efeito.
 obs2: innerText mostrará apenas a tag pai, se houverem outras tags, de formatação de estilo por exemplo, não serão mostradas, ao contrário de innerHtml.
   <li>ID</li>
 getElementById()
@@ -185,9 +189,63 @@ ex: var d = document.querySelector('div#msg')
 d.style.color = 'blue'
 # pois estamos utilizando um Id.
 </ul>
-  
-</pre>
+<br>
+<hr>
+<h2 id="EVT">Eventos DOM</h2>
+Evento é tudo o que pode acontecer com o elemento selecionado.
+
+exs:
+<ul>
+<li>mouseenter (quando o mouse está dentro do elemento)</li>
+<li>mousemove (quando o mesmo se move dentro do elemento)</li>
+<li>mousedown (quando se clica [e segura])</li>
+<li>mouseup  (quando é solto o clique)</li>
+<li>click (click "inteiro")</li>
+<li>mouseout (quando o mouse sai do elemento)</li>
+Mais eventos clique <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events" target="_blank" alt="link para referências de eventos DOM do MDN">aqui</a>
+</ul>
+<hr>
+<h2 id="FUNC">Funções (de evento)</h2>
+function ação(parâmetros){
+
+}
+
+Exemplo em html: 
+
+    <span style="color : #d11717">&lt;div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()"&gt; <!--metódo "on" é usado para disparar um evento dentro do html-->
+        interaja...
+    &lt;/div&gt;</span>
+
+No script: 
+
+    <span style="color : #d11717">
+var a = window.document.getElementById('area') <span style="color: rgb(65, 65, 65)">*Escopo global</span>
+
+function clicar() {
+  a.innerText = 'Clicou!'
+  a.style.background = 'red'
+}
+function entrou() {
+  a.innerText = 'Entrou!'
+}
+function saiu() {
+  a.innerText ='Saiu!'
+  a.style.background = 'green'
+}</span>
+
+Direto no script:
+
+var a = window.document.getElementById('area')
+a.addEventListener('click', clicar)
+a.addEventListener('mouseenter', entrou)
+a.addEventListener('mouseout', saiu)
+
+<hr>
 </article>
+<article id="condic">
+<h1 id="COND">Condições</h1>
+</article>
+</pre>
 <script src="script.js"></script>
 </body>
 <hr id="hrodape">

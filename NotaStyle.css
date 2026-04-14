@@ -28,6 +28,9 @@ html {
 hr {
   margin-right: 50px;
 }
+#hrindice{
+  margin-left: 50px;
+}
 #hrodape {
   margin-left: 50px
 }
@@ -110,7 +113,14 @@ article h2, p {
   text-align: center; 
   color: #669afa
 }
-footer a img{
+
+#condic, h1 {
+  text-align: center;
+  padding: 15px;
+  color: #249624
+}
+
+#footer, a, img{
   width: 30px;
   display: block;
   margin: 12px;
