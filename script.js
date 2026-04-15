@@ -17,3 +17,20 @@ window.onclick = function(event) {
     }
   }
 }
+/*meu código (utilizando IA para estudos)*/
+function copiar(id, botao) {
+  const texto = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(texto)
+    .then(() => {
+      botao.innerText = "Copiado ✓";
+      setTimeout(() => {
+        botao.innerText = "Copiar";
+      }, 1500);
+    })
+    .catch(err => {
+      botao.innerText = "Erro ao copiar";
+      setTimeout(() => {
+        botao.innerText = "Copiar";
+      }, 1500);
+    });
+}

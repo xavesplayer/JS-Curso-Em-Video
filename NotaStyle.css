@@ -29,7 +29,7 @@ hr {
   max-width: 900px;
   border: none;
   height: 1px;
-  background: linear-gradient(to right, transparent, #669afa, transparent);
+  background: linear-gradient(to right, transparent, #4485ff, transparent);
 }
 
 /* TÍTULOS */
@@ -38,12 +38,13 @@ h2, h3, h4 {
 }
 
 h2 {
-  color: #669afa;
+  color: #155c85;
   text-align: center;
 }
 
 h3 {
-  color: rgb(80, 138, 138);
+  color: rgba(177, 81, 17, 0.788);
+  background: linear-gradient(to right, #1e3d75bd, transparent, transparent);
   font-size: 24px;
   border-left: 4px solid #669afa;
   padding-left: 10px;
@@ -84,7 +85,7 @@ code {
 
 /* OBSERVAÇÕES */
 .obs {
-  background-color: rgba(255, 255, 0, 0.08);
+  background-color: rgba(161, 161, 19, 0.048);
   border-left: 4px solid #f1c40f;
   padding: 10px;
   margin: 10px 0;
@@ -96,14 +97,27 @@ code {
   content: "⚠️ ";
 }
 
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.img-wrapper img {
+  width: 75%;
+  border-radius: 12px;
+  padding: 5px;
+  background: linear-gradient(45deg, #4485ff, #ffd700, #4485ff);
+}
+
 /* IMAGEM */
 #imgDOM {
   max-width: 100%;
   display: block;
   margin: 20px auto;
   border-radius: 8%;
-  padding: 12px;
-  border: 5px solid #669afa;
+  box-shadow: 0 0 15px rgba(68, 133, 255, 0.4);
+  filter: contrast(85%) brightness(85%);
 }
 
 /* BOTÃO TOPO */
@@ -115,6 +129,18 @@ code {
 
 .home_btn img {
   width: 40px;
+}
+/* BOTÃO COPIAR */
+.copybtn {
+  top: 10px;
+  right: 10px;
+  background-color: #661f1fa1;
+  color: white;
+  padding: 5px 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 12px;
 }
 
 /* ÍNDICE (DROPDOWN FIXO) */

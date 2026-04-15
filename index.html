@@ -54,7 +54,7 @@
 <section>
 <h3 id="Atri">Operadores de Atribuição</h3>
 
-<pre><code>
+<pre id="cop1"><code>
 var n = 3
 n = n + 4   // ou n += 4
 n = n - 5   // ou n -= 5
@@ -63,6 +63,7 @@ n = n / 2   // ou n /= 2
 n = n ** 2  // ou n **= 2
 n = n % 5   // ou n %= 5
 </code></pre>
+<button class="copybtn" onclick="copiar('cop1', this)">Copiar</button>
 
 </section>
 
@@ -72,7 +73,7 @@ n = n % 5   // ou n %= 5
 <section>
 <h3 id="Incre">Operadores de Incremento</h3>
 
-<pre><code>
+<pre id="cop2"><code>
 var x = 5
 
 ++x   // pré-incremento
@@ -81,6 +82,8 @@ x++   // pós-incremento
 --x
 x--
 </code></pre>
+
+<button class="copybtn" onclick="copiar('cop2', this)">Copiar</button>
 
 </section>
 
@@ -123,11 +126,12 @@ x--
   <li><strong>||</strong> → ou</li>
 </ul>
 
-<pre><code>
+<pre id="cop3"><code>
 idade >= 15 && idade <= 17
 estado == 'RJ' || estado == 'SP'
 salario > 1500 && sexo != 'M'
 </code></pre>
+<button class="copybtn" onclick="copiar('cop3', this)">Copiar</button>
 
 </section>
 
@@ -137,9 +141,10 @@ salario > 1500 && sexo != 'M'
 <section>
 <h3 id="Tern">Operador Ternário</h3>
 
-<pre><code>
+<pre id="cop4"><code>
 media >= 7 ? "Aprovado" : "Reprovado"
 </code></pre>
+<button class="copybtn" onclick="copiar('cop4', this)">Copiar</button>
 
 <div class="obs">
   ? funciona como if e : como else.
@@ -156,7 +161,9 @@ media >= 7 ? "Aprovado" : "Reprovado"
 <p><strong>Document Object Model</strong></p>
 <p>Facilita o acesso ao HTML usando JavaScript.</p>
 
-<img id="imgDOM" src="img/DOM.webp" alt="Árvore DOM">
+<div class="img-wrapper">
+  <img id="imgDOM" src="img/DOM.webp" alt="Árvore DOM">
+</div>
 <p class="credito">Créditos da imagem: Marcos Dantas, DIO</p>
 
 <hr>
@@ -172,15 +179,16 @@ media >= 7 ? "Aprovado" : "Reprovado"
   <li>querySelectorAll()</li>
 </ul>
 
-<pre><code>
+<pre id="cop5"><code>
 var p1 = document.getElementsByTagName('p')[0]
 var d = document.querySelector('#msg')
 
 d.style.color = 'blue'
 </code></pre>
+<button class="copybtn" onclick="copiar('cop5', this)">Copiar</button>
 
 <div class="obs">
-  getElementsByTagName retorna vários elementos, por isso usamos índice [0].
+  Quando há "Elements" (no plural) retorna vários elementos, por isso usamos índice [0].
 </div>
 
 <div class="obs">
@@ -225,15 +233,16 @@ aqui
 <section>
 <h2 id="FUNC">Funções</h2>
 
-<pre><code>
+<pre id="cop6"><code>
 function clicar() {
   area.innerText = 'Clicou!'
   area.style.background = 'red'
 }
 </code></pre>
+<button class="copybtn" onclick="copiar('cop6', this)">Copiar</button>
 
 <div class="obs">
-  Eventos podem ser adicionados direto no HTML ou via addEventListener.
+  Eventos podem ser adicionados direto no HTML ou via addEventListener no Script.
 </div>
 
 </section>
