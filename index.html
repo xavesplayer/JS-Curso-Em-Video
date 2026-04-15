@@ -56,12 +56,12 @@
 
 <pre id="cop1"><code>
 var n = 3
-n = n + 4   // ou n += 4
-n = n - 5   // ou n -= 5
-n = n * 4   // ou n *= 4
-n = n / 2   // ou n /= 2
-n = n ** 2  // ou n **= 2
-n = n % 5   // ou n %= 5
+n = n + 4   //  n += 4
+n = n - 5   //  n -= 5
+n = n * 4   //  n *= 4
+n = n / 2   //  n /= 2
+n = n ** 2  //  n **= 2
+n = n % 5   //  n %= 5
 </code></pre>
 <button class="copybtn" onclick="copiar('cop1', this)">Copiar</button>
 
@@ -234,6 +234,10 @@ aqui
 <h2 id="FUNC">Funções</h2>
 
 <pre id="cop6"><code>
+No HTML:
+&lt;div id="area"&gt;...&lt;/div&gt;
+&lt;button onclick="clicar()">Clicar&lt;/button&gt;
+No JS:
 function clicar() {
   area.innerText = 'Clicou!'
   area.style.background = 'red'
@@ -244,6 +248,9 @@ function clicar() {
 <div class="obs">
   Eventos podem ser adicionados direto no HTML ou via addEventListener no Script.
 </div>
+<div class="obs">
+  Também pode-se usar a id do button para referencia-lo.
+</div>
 
 </section>
 
@@ -252,6 +259,19 @@ function clicar() {
 <!-- CONDIÇÕES -->
 <section>
 <h2 id="COND">Condições</h2>
+<pre id="cop7"><code>
+  if (condição) {
+    true
+  }
+  else {
+    false
+  }
+</code></pre>
+<button class="copybtn" onclick="copiar('cop6', this)">Copiar</button>
+<div class="obs">
+  
+</div>
+
 </section>
 
 <hr>
