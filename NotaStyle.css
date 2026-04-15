@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-  color: #7fb3ff;
+  color: #5da2ff;
   background: linear-gradient(to right, #1e3d75bd, transparent, transparent);
   font-size: 24px;
   border-left: 4px solid #669afa;
@@ -132,7 +132,7 @@ code {
 }
 /* BOTÃO COPIAR */
 .copybtn {
-  background-color:#2f4f88;;
+  background-color:#3a3a3a;;
   color: white;
   padding: 5px 8px;
   border: none;
@@ -146,6 +146,13 @@ code {
 
 .copybtn:active {
   transform: scale(0.95);
+}
+
+/* EFEITO PARA BOTÕES */
+.copybtn,
+.dropbtn,
+.dropdown-content a {
+  transition: 0.2s;
 }
 
 /* ÍNDICE (DROPDOWN FIXO) */
@@ -166,29 +173,30 @@ code {
 }
 
 .dropbtn:hover {
-  background-color: #300505;
+  background-color: #3b73d1;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 38px;
   left: 0;
-  background-color: rgba(59, 59, 59, 0.95);
+  background-color: rgba(59, 59, 59, 0.94);
   min-width: 180px;
   border-radius: 6px;
-  box-shadow: 0 8px 16px #000;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 .dropdown-content a {
   display: block;
+  text-decoration: none;
   padding: 8px 12px;
   color: white;
-  text-decoration: none;
 }
 
 .dropdown-content a:hover {
-  background-color: #300505;
+  text-decoration: none;
+  background-color: #3b73d1;
 }
 
 .show {
