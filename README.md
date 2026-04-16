@@ -1,6 +1,6 @@
 Projeto pessoal de anotações de JavaScript.
 
-Criei essa página para estudar/relembrar conceitos e, ao mesmo tempo, praticar HTML, CSS e organização de código.
+Criei essa página para estudar/relembrar conceitos e, ao mesmo tempo, praticar HTML, CSS & JavaScript e organização de código.
 
 Foco em semântica, responsividade e boas práticas.
 
