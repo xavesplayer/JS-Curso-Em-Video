@@ -13,7 +13,7 @@ function calcular() {
 }
 
 function verificar() {
-    var nac = document.querySelector('input#nac').value
+    var nac = document.querySelector('input#nac').value.toLowerCase()
     var res2 = document.querySelector('div#res2')
     if (nac == 'brasileiro') {
         res2.innerHTML = 'Você é brasileiro!'

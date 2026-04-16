@@ -168,7 +168,7 @@ media >= 7 ? "Aprovado" : "Reprovado"
 
 <hr>
 
-<h4>Seletores</h4>
+<h3>Seletores</h3>
 
 <ul>
   <li>getElementsByTagName()</li>
@@ -205,7 +205,7 @@ d.style.color = 'blue'
 
 <!-- EVENTOS -->
 <section>
-<h2 id="EVT">Eventos DOM</h2>
+<h3 id="EVT">Eventos DOM</h3>
 
 <p>Evento é qualquer interação com um elemento.</p>
 
@@ -231,7 +231,7 @@ aqui
 
 <!-- FUNÇÕES -->
 <section>
-<h2 id="FUNC">Funções</h2>
+<h3 id="FUNC">Funções</h3>
 
 <pre id="cop6"><code>
 No HTML:
@@ -258,19 +258,76 @@ function clicar() {
 
 <!-- CONDIÇÕES -->
 <section>
-<h2 id="COND">Condições</h2>
+<h3 id="COND">Condições</h3>
+ <p>Condições simples e compostas</p>
 <pre id="cop7"><code>
   if (condição) {
+    true
+  }
+  else if (condição) {
     true
   }
   else {
     false
   }
 </code></pre>
-<button class="copybtn" onclick="copiar('cop6', this)">Copiar</button>
+<button class="copybtn" onclick="copiar('cop7', this)">Copiar</button>
+<hr>
+<p>Condição múltipla</p>
+<pre id="cop8"><code>
+  switch (condição) {
+    case valor1:
+    // código
+    break
+    case valor2:
+    // código
+    break
+    default:
+    // código
+  }
+</code></pre>
+<button class="copybtn" onclick="copiar('cop8', this)">Copiar</button>
+<p style="padding-top: 12px;">Exemplo de switch/case/default</p>
+<pre id="cop9"><code>
+  var agora = new Date()
+  var diaSem = agora.getDay()
+console.log(diaSem)
+switch (diaSem){
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda-feira')
+        break
+    case 2:
+        console.log('Terça-feira')
+        break
+    case 3:
+        console.log('Quarta-feira')
+        break
+        case 4:
+        console.log('Quinta-feira')
+        break
+        case 5:
+        console.log('Sexta-feira')
+        break
+        case 6:
+        console.log('Sábado')
+        break
+        default:
+        console.log('Dia inválido')
+        break
+      }
+    </code></pre>
+<button class="copybtn" onclick="copiar('cop9', this)">Copiar</button>
 <div class="obs">
-  
+  O switch é mais eficiente que if-else para muitas condições. 
 </div>
+<div class="obs">
+  O break é necessário (obrigatório) para evitar que o código continue executando os próximos cases.
+</div>
+<div class="obs">
+O switch só aceita números inteiros, strings ou booleanos. Não funciona com intervalos. Fazendo-o ser um pouco mais limitado que o if-else.
 
 </section>
 
