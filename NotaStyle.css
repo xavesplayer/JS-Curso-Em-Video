@@ -71,7 +71,7 @@ li {
 
 /* CÓDIGO */
 pre {
-  background-color: #1e1e1e;
+  background-color: #1a1a1a;
   padding: 12px;
   border-radius: 6px;
   overflow-x: auto;
@@ -81,6 +81,90 @@ pre {
 
 code {
   color: #dcdcdc;
+}
+
+/* CODE - VS CODE STYLE */
+
+pre[class*="language-"] {
+  background: #181818;
+  color: #d4d4d4;
+  padding: 14px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border-left: 4px solid #569cd6;
+  font-size: 14px;
+}
+
+/* Texto padrão */
+code[class*="language-"] {
+  color: #d4d4d4;
+}
+
+/* Comentários */
+.token.comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* Palavras-chave */
+.token.keyword {
+  color: #c586c0;
+}
+
+/* Strings */
+.token.string {
+  color: #ce9178;
+}
+
+/* Números */
+.token.number {
+  color: #b5cea8;
+}
+
+/* Funções */
+.token.function {
+  color: #dcdcaa;
+}
+
+/* Operadores */
+.token.operator {
+  color: #d4d4d4;
+}
+
+/* Boolean */
+.token.boolean {
+  color: #569cd6;
+}
+
+/* Variáveis */
+.token.variable {
+  color: #9cdcfe;
+}
+
+/* Propriedades */
+.token.property {
+  color: #9cdcfe;
+}
+
+/* Tags HTML */
+.token.tag {
+  color: #569cd6;
+}
+
+/* Atributos HTML */
+.token.attr-name {
+  color: #9cdcfe;
+}
+
+/* Valores de atributos */
+.token.attr-value {
+  color: #ce9178;
+}
+
+/* Destaque de seleção */
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection {
+  background: #264f78;
 }
 
 /* OBSERVAÇÕES */

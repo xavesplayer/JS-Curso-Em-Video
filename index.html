@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="NotaStyle.css">
+  <!-- Prism.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow-night.min.css">
+
+  <!-- Prism.js JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
   <title>Anotações JS</title>
 </head>
 
@@ -54,7 +60,7 @@
 <section>
 <h3 id="Atri">Operadores de Atribuição</h3>
 
-<pre id="cop1"><code>
+<pre class="language-javascript" id="cop1"><code class="language-javascript">
 var n = 3
 n = n + 4   //  n += 4
 n = n - 5   //  n -= 5
@@ -73,15 +79,18 @@ n = n % 5   //  n %= 5
 <section>
 <h3 id="Incre">Operadores de Incremento</h3>
 
-<pre id="cop2"><code>
+<pre class="language-javascript" id="cop2"><code class="language-javascript">
 var x = 5
 
-++x   // pré-incremento
-x++   // pós-incremento
+++x
+x++
 
 --x
 x--
 </code></pre>
+<div class="obs">
+  ++x incrementa o valor antes de usá-lo. x++ incrementa depois de usá-lo.
+</div>
 
 <button class="copybtn" onclick="copiar('cop2', this)">Copiar</button>
 
@@ -126,7 +135,7 @@ x--
   <li><strong>||</strong> → ou</li>
 </ul>
 
-<pre id="cop3"><code>
+<pre class="language-javascript" id="cop3"><code class="language-javascript">
 idade >= 15 && idade <= 17
 estado == 'RJ' || estado == 'SP'
 salario > 1500 && sexo != 'M'
@@ -141,7 +150,7 @@ salario > 1500 && sexo != 'M'
 <section>
 <h3 id="Tern">Operador Ternário</h3>
 
-<pre id="cop4"><code>
+<pre class="language-javascript" id="cop4"><code class="language-javascript">
 media >= 7 ? "Aprovado" : "Reprovado"
 </code></pre>
 <button class="copybtn" onclick="copiar('cop4', this)">Copiar</button>
@@ -179,7 +188,7 @@ media >= 7 ? "Aprovado" : "Reprovado"
   <li>querySelectorAll()</li>
 </ul>
 
-<pre id="cop5"><code>
+<pre class="language-javascript" id="cop5"><code class="language-javascript">
 var p1 = document.getElementsByTagName('p')[0]
 var d = document.querySelector('#msg')
 
@@ -233,7 +242,7 @@ aqui
 <section>
 <h3 id="FUNC">Funções</h3>
 
-<pre id="cop6"><code>
+<pre class="language-javascript" id="cop6"><code class="language-javascript">
 No HTML:
 &lt;div id="area"&gt;...&lt;/div&gt;
 &lt;button onclick="clicar()">Clicar&lt;/button&gt;
@@ -260,7 +269,7 @@ function clicar() {
 <section>
 <h3 id="COND">Condições</h3>
  <p>Condições simples e compostas</p>
-<pre id="cop7"><code>
+<pre class="language-javascript" id="cop7"><code class="language-javascript">
   if (condição) {
     true
   }
@@ -274,7 +283,7 @@ function clicar() {
 <button class="copybtn" onclick="copiar('cop7', this)">Copiar</button>
 <hr>
 <p>Condição múltipla</p>
-<pre id="cop8"><code>
+<pre class="language-javascript" id="cop8"><code class="language-javascript">
   switch (condição) {
     case valor1:
     // código
@@ -288,7 +297,7 @@ function clicar() {
 </code></pre>
 <button class="copybtn" onclick="copiar('cop8', this)">Copiar</button>
 <p style="padding-top: 12px;">Exemplo de switch/case/default</p>
-<pre id="cop9"><code>
+<pre class="language-javascript" id="cop9"><code class="language-javascript">
   var agora = new Date()
   var diaSem = agora.getDay()
 console.log(diaSem)
@@ -321,7 +330,7 @@ switch (diaSem){
     </code></pre>
 <button class="copybtn" onclick="copiar('cop9', this)">Copiar</button>
 <div class="obs">
-  O switch é mais eficiente que if-else para muitas condições. 
+  O switch é mais eficiente que if-else para muitas condições. Inclusive para o exemplo acima, onde o if-else seria mais complexo.
 </div>
 <div class="obs">
   O break é necessário (obrigatório) para evitar que o código continue executando os próximos cases.
